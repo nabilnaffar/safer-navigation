@@ -1,0 +1,39 @@
+{
+  "name": "safer-navigation",
+  "version": "0.0.1",
+  "description": "",
+  "main": "lib/safe.js",
+  "types": "lib/safe.d.ts",
+  "scripts": {
+    "prebuild": "rm -rf lib",
+    "build": "tsc",
+    "test": "jest"
+  },
+  "keywords": [],
+  "author": "Naffar Nabil <naffar.nabil@gmail.com>",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/jest": "^23.0.0",
+    "jest": "^23.1.0",
+    "ts-jest": "^22.4.6",
+    "typescript": "^2.9.1"
+  },
+  "jest": {
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js"
+    ],
+    "transform": {
+      "^.+\\.(ts|tsx)$": "ts-jest"
+    },
+    "globals": {
+      "ts-jest": {
+        "tsConfigFile": "tsconfig.test.json"
+      }
+    },
+    "testMatch": [
+      "**/*.spec.ts"
+    ]
+  }
+}
